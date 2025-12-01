@@ -1,5 +1,5 @@
 self.addEventListener('install', e => e.waitUntil(
-  caches.open('photo-widget').then(cache => cache.addAll([
+  caches.open('swipe-gallery').then(cache => cache.addAll([
     '/',
     '/index.html',
     '/style.css',

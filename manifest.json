@@ -1,6 +1,6 @@
 {
-  "name": "Photo Widget",
-  "short_name": "Photos",
+  "name": "Swipe Gallery",
+  "short_name": "Gallery",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#ffffff",

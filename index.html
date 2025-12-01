@@ -1,16 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Swipe Gallery</title>
+  <title>Gallery</title>
+  <link rel="stylesheet" href="photoswipe/photoswipe.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="manifest" href="manifest.json">
+  <script type="module" src="app.js"></script>
+  <script type="module">
+    import PhotoSwipeLightbox from './photoswipe/photoswipe-lightbox.esm.js';
+    const lightbox = new PhotoSwipeLightbox({
+      // may select multiple "galleries"
+      gallery: '#gallery',
+
+      // Elements within gallery (slides)
+      children: 'a',
+
+      // setup PhotoSwipe Core dynamic import
+      pswpModule: () => import('/photoswipe/photoswipe.esm.js')
+    });
+    lightbox.init();
+  </script>
 </head>
+
 <body>
-  <div class="gallery-container">
-    <div id="gallery" class="gallery"></div>
-  </div>
-  <script src="app.js"></script>
+
+
+  <div class="pswp-gallery pswp-gallery--single-column" id="gallery">
+    <a href="photos/IMG_7016.PNG" data-pswp-width="1170" data-pswp-height="878" target="_blank">
+      <img src="photos/IMG_7016.PNG" />
+    </a>
+    <a href="photos/IMG_7017.PNG" data-pswp-width="1170" data-pswp-height="878" target="_blank">
+      <img src="photos/IMG_7017.PNG" />
+    </a>
+    <a href="photos/IMG_7018.PNG" data-pswp-width="1170" data-pswp-height="878" target="_blank">
+      <img src="photos/IMG_7018.PNG" />
+    </a>
+    <a href="photos/IMG_7019.PNG" data-pswp-width="1170" data-pswp-height="878" target="_blank">
+      <img src="photos/IMG_7019.PNG" />
+    </a>
+    <a href="photos/IMG_7020.PNG" data-pswp-width="1170" data-pswp-height="878" target="_blank">
+      <img src="photos/IMG_7020.PNG" />
+    </a>
+    <a href="photos/IMG_7021.PNG" data-pswp-width="1170" data-pswp-height="878" target="_blank">
+      <img src="photos/IMG_7021.PNG" />
+    </a>
+    <a href="photos/IMG_7022.PNG" data-pswp-width="1170" data-pswp-height="878" target="_blank">
+      <img src="photos/IMG_7022.PNG" />
+    </a>
+    <a href="photos/IMG_7023.PNG" data-pswp-width="1170" data-pswp-height="878" target="_blank">
+      <img src="photos/IMG_7023.PNG" />
+    </a>
+    <a href="photos/IMG_7024.PNG" data-pswp-width="1170" data-pswp-height="878" target="_blank">
+      <img src="photos/IMG_7024.PNG" />
+    </a>
+    <a href="photos/IMG_7025.PNG" data-pswp-width="1170" data-pswp-height="878" target="_blank">
+      <img src="photos/IMG_7025.PNG" />
+    </a>
+    <a href="photos/IMG_7026.PNG" data-pswp-width="1170" data-pswp-height="878" target="_blank">
+      <img src="photos/IMG_7026.PNG" />
+    </a>
+    <a href="photos/IMG_7027.PNG" data-pswp-width="1170" data-pswp-height="878" target="_blank">
+      <img src="photos/IMG_7027.PNG" />
+    </a>
+    <a href="photos/IMG_7028.PNG" data-pswp-width="1170" data-pswp-height="878" target="_blank">
+      <img src="photos/IMG_7028.PNG" />
+    </a>
+    <a href="photos/IMG_7029.PNG" data-pswp-width="1170" data-pswp-height="878" target="_blank">
+      <img src="photos/IMG_7029.PNG" />
+    </a>
+    <a href="photos/IMG_7030.PNG" data-pswp-width="1170" data-pswp-height="878" target="_blank">
+      <img src="photos/IMG_7030.PNG" />
+    </a>
+    <a href="photos/IMG_7031.PNG" data-pswp-width="1170" data-pswp-height="878" target="_blank">
+      <img src="photos/IMG_7031.PNG" />
+    </a>
+    <a href="photos/IMG_7032.PNG" data-pswp-width="1170" data-pswp-height="878" target="_blank">
+      <img src="photos/IMG_7032.PNG" />
+    </a>
+    <a href="photos/IMG_7033.PNG" data-pswp-width="1170" data-pswp-height="1168" target="_blank">
+      <img src="photos/IMG_7033.PNG" />
+    </a>
 </body>
+
 </html>

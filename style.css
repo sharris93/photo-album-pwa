@@ -5,12 +5,12 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #f0f0f0;
+  background: #111;
   overflow: hidden;
 }
 
 .gallery-container {
-  width: 90%;
+  width: 95%;
   max-width: 400px;
   height: 400px;
   overflow: hidden;

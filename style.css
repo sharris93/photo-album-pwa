@@ -20,11 +20,9 @@ body {
 #gallery > a {
   display: block;
   width: calc(50% - 2.5px);
-  border-radius: 5px;
-  overflow: hidden;
 }
 
 #gallery > a > img {
   width: 100%;
-  object-fit: cover;
+  border-radius: 5px;
 }
